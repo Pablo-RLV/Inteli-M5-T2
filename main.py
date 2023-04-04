@@ -24,7 +24,7 @@ def index():
     r = ultima_linha[4]
     return render_template('index.html', x=x, y=y, z=z, r=r)
 
-@app.route('/rota', methods=['POST'])
+@app.route('/rota', methods=['POST']) #realiza a postagem de dados no banco de dados
 def rota():
     x = request.form['x']
     y = request.form['y']
@@ -34,7 +34,7 @@ def rota():
     conn.commit()
     return "Dados inseridos com sucesso"
 
-@app.route('/get', methods=['GET'])
+@app.route('/get', methods=['GET']) #rota que faz o get da última linha do banco de dados, para requisitar dados no Godot
 def get():
     cursor = conn.cursor()
     cursor.execute('SELECT id, x, y, z, r FROM dados ORDER BY id DESC LIMIT 1')
@@ -47,14 +47,7 @@ def get():
                 "r": my_tuple[4]
                 }
     my_json = json.dumps(my_dict)
-    # response = make_response(str(my_tuple))
-    # response.headers['Content-Type'] = 'text/plain'
     return my_json
-
-
-# @app.teardown_appcontext
-# def encerrar_conexao(exception):
-#     conn.close()
 
 if __name__ == '__main__':
     app.run(debug=True)
