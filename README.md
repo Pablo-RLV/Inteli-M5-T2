@@ -4,11 +4,11 @@
 
 <h3>Organização de diretórios</h3><br>
 
-<li><a href="https://github.com/Pablo-RLV/Inteli-M5-T2/tree/main/Prova"><code>Prova prática</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da primeira prova do módulo.<br>
+<li><a href="https://github.com/Pablo-RLV/Inteli-M5-T2/tree/main/Prova"><code>Prova</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da primeira prova do módulo.<br>
   <p><b>Descrição:</b> implementação de banco de dados utilizando SQLAlchemy.</p>
 <br>
 
-<li><a href="https://github.com/Pablo-RLV/Inteli-M5-T2/tree/main/Ponderada"><code>Robô digital</code></a>&nbsp;&nbsp;&nbsp;Desenvolvimento de atividade ponderada.<br>
+<li><a href="https://github.com/Pablo-RLV/Inteli-M5-T2/tree/main/Ponderada"><code>Ponderada</code></a>&nbsp;&nbsp;&nbsp;Desenvolvimento de atividade ponderada.<br>
   <p><b>Descrição:</b> simulação de robô digital utilizando Godot.</p>
 <br>
 
